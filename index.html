@@ -1,55 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document Verification System</title>
-  <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <header>
-    <div class="logo">DocVerify</div>
-    <nav>
-      <ul>
-        <li><a href="#home.html">Home</a></li>
-        <li><a href="http://127.0.0.1:5500/features.html">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#login" class="login-btn">Login</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">My Dashboard</div>
+    <ul class="nav-links">
+        <li><a href="index.html" id="home-link">Dashboard</a></li>
+        <li><a href="upload.html" id="upload-document-link">Upload Document</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li class="profile-container">
+            <a href="#" class="profile-link" id="profile-link">
+                <div class="profile-pic">
+                    <img src="profile.png" alt="Profile Picture">
+                </div>
+            </a>
+            <!-- Profile Dropdown -->
+            <div class="profile-dropdown" id="profile-dropdown">
+                <div class="profile-header">
+                    <div class="profile-pic">
+                        <img src="profile.png" alt="Profile Picture">
+                    </div>
+                    <h3>JOHN</h3>
+                </div>
+                <div class="profile-details">
+                    <p>Email: john@gmail.com</p>
+                    <p><a href="#" style="color: black;">verified documents</a></p>
+                    <button class="logout-btn">Logout</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</nav>
 
-  <section id="home">
-    <div class="banner">
-      <h1>Automated, Secure, and Fast Document Verification</h1>
-      <p>AI and Blockchain-Based Document Verification System</p>
-      <a href="#features" class="btn">Learn More</a>
-      <a href="#signup" class="btn">Get Started</a>
+    
+
+    <!-- Main Content Area -->
+    <main id="content-area">
+        <!-- Main Banner -->
+        <section class="home-banner">
+            <div class="banner-content">
+                <h1>Automated, Secure, and Fast Document Verification with AI & Blockchain</h1>
+                <p>
+                    Our cutting-edge document verification system integrates advanced artificial intelligence and blockchain technology to offer a comprehensive solution for authenticating official documents. Whether you’re handling birth certificates, academic transcripts, ID cards, or other credentials, our system ensures the highest standards of security and efficiency.
+                </p>
+                <div class="cta-buttons">
+                    <a href="Registration.html" class="cta-btn">Get Started</a>
+                    <a href="#features" class="cta-btn secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="features-header">
+                <h2>Why Choose Us?</h2>
+                <p>Discover the key benefits and features of our automated document verification system.</p>
+            </div>
+            <div class="feature-items">
+                <div class="feature-item">
+                    <img src="path/to/ai-icon.png" alt="AI-powered Verification">
+                    <h3>AI-Powered Verification</h3>
+                    <p>Harness the power of artificial intelligence to quickly and accurately verify document authenticity.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="path/to/blockchain-icon.png" alt="Blockchain Security">
+                    <h3>Blockchain Security</h3>
+                    <p>Secure your documents with blockchain technology, ensuring their immutability and protection against tampering.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="path/to/speed-icon.png" alt="Fast Processing">
+                    <h3>Fast Processing</h3>
+                    <p>Enjoy rapid document verification with our optimized system designed for efficiency and speed.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="path/to/user-friendly-icon.png" alt="User-Friendly Interface">
+                    <h3>User-Friendly Interface</h3>
+                    <p>Experience an intuitive and easy-to-navigate interface designed to make document verification straightforward.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#terms">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <div class="footer-section social-media">
+                
+                <a href="https://facebook.com" target="_blank" style="color: aliceblue;" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i><br/>
+                </a>
+                <a href="https://twitter.com" target="_blank" style="color: aliceblue;" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i><br/>
+                </a>
+                <a href="https://linkedin.com" target="_blank" style="color: aliceblue;" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i><br/>
+                </a>
+            </div>
+        </div>
+        <div class="footer-section contact-info">
+            <h3>Contact Us</h3>
+            <p>Address: 123 Verification Ave, Secure City, SC 56789</p>
+            <p>Email: <a href="mailto:support@docverify.com" style="color: aliceblue;">support@docverify.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
     </div>
-  </section>
 
-  <section id="features">
-    <h2>Key Features</h2>
-    <div class="features-container">
-      <div class="feature">
-        <h3>AI-Powered Verification</h3>
-        <p>Leverage OCR and AI to automate document data extraction and validation.</p>
-      </div>
-      <div class="feature">
-        <h3>Blockchain Security</h3>
-        <p>Use blockchain to secure document integrity and detect tampering.</p>
-      </div>
-      <div class="feature">
-        <h3>Real-Time Verification</h3>
-        <p>Verify documents within minutes using real-time blockchain validation.</p>
-      </div>
+    <!-- Additional Footer Links -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 My Dashboard. All rights reserved.</p>
+        <ul class="footer-bottom-links">
+            <li><a href="#">Terms of Service  |</a></li>
+            <li><a href="#">Privacy Policy  |</a></li>
+            <li><a href="#">Cookie Settings  |</a></li>
+            <li><a href="#">Accessibility
+
+            </a></li>
+        </ul>
     </div>
-  </section>
+</footer>
 
-  <footer>
-    <p>&copy; 2024 DocVerify. All rights reserved.</p>
-  </footer>
-  <script src="home.js"></script>
+
+    <!-- Include JavaScript files -->
+    <script src="index.js"></script>
+    <script src="upload.js" defer></script>
 </body>
 </html>
