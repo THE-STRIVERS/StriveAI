@@ -291,7 +291,7 @@ a:hover {
 
 .feature-item:hover {
     background-color: #f4f4f4; /* Change background color on hover */
-    transform: scale(1.50);    /* Slightly increase the size on hover */
+    transform: scale(1.04);    /* Slightly increase the size on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a more pronounced shadow */
     transition: all 0.2s ease-in-out; /* Smooth transition effect */
 }
