@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Upload</title>
-    <link rel="stylesheet" href="upload.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Verification</title>
+  <link rel="stylesheet" href="upload.css">
 </head>
 <body>
-    <div class="upload-container">
-        <h2>Upload Your Document</h2>
-        <p class="instructions">Please upload your document by dragging it into the box below or by selecting it manually. Supported file types: PDF, DOCX, PNG, JPG.</p>
-        <div class="drag-area" id="drag-area">
-            <header>Drag & Drop to Upload File</header>
-            <span>OR</span>
-            <button id="browse-btn">Browse File</button>
-            <input type="file" id="file-input" hidden>
-        </div>
-        <div id="file-name"></div>
-        <div class="progress-bar">
-            <div id="progress"></div>
-        </div>
+  <section class="upload-section">
+    <h1>Upload Your Document for Verification</h1>
+    <div id="upload-area" class="upload-area">
+      <input type="file" id="doc-upload" style="display: none;" />
+      <button id="verify-btn">Browse and Upload Document</button>
+      <p id="file-name">No file selected</p>
+      <div class="progress-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
     </div>
-    
-
-    <script src="upload.js"></script>
+    <div id="loader"></div>
+    <div id="verification-result">
+      <h3>Verification Flow:</h3>
+      <p id="flow-message">No document uploaded yet.</p>
+    </div>
+  </section>
+  <script src="upload.js"></script>
 </body>
 </html>
