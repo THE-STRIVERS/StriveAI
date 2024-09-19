@@ -1,0 +1,75 @@
+/* Container for the entire upload section */
+.upload-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.instructions {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Drag and Drop Area Styling */
+.drag-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.drag-area.active {
+    background-color: #f0f0f0;
+}
+
+.icon {
+    font-size: 50px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+header {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#browse-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#browse-btn:hover {
+    background-color: #0056b3;
+}
+
+/* File Name Display */
+#file-name {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    height: 10px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}

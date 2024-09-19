@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&display=swap'>
+  <link rel="stylesheet" href="Registration.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="registration_box">
+    <div class="registration-header">
+      <span>Register</span>
+    </div>
+
+    <div class="input_box">
+      <input type="text" id="username" class="input-field" required>
+      <label for="username" class="label">Username</label>
+      <i class="bx bx-user icon"></i>
+    </div>
+
+    <div class="input_box">
+      <input type="email" id="email" class="input-field" required>
+      <label for="email" class="label">Email</label>
+      <i class="bx bx-envelope icon"></i>
+    </div>
+
+    <div class="input_box">
+      <input type="password" id="password" class="input-field" required>
+      <label for="password" class="label">Password</label>
+      <i class="bx bx-lock-alt icon"></i>
+    </div>
+
+    <div class="input_box">
+      <input type="password" id="confirm_password" class="input-field" required>
+      <label for="confirm_password" class="label">Confirm Password</label>
+      <i class="bx bx-lock-alt icon"></i>
+    </div>
+
+    <div class="input_box">
+      <label for="role" class="label"></label>
+      <select id="role" class="input-field" required>
+        <option value="" disabled selected>Register as</option>
+        <option value="individual">Individual</option>
+        <option value="authority">Authority</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+
+    <div class="input_box">
+      <input type="submit" class="input-submit" value="Register">
+    </div>
+
+    <div class="login">
+      <span>Already have an account? <a href="Login.html">Login</a></span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,356 @@
+/* dashboard.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #100f0f;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #53646f;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+    color: #007bff;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+/* Profile Section */
+.profile {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-header .profile-pic {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-header .profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-header h1 {
+    margin-left: 20px;
+    font-size: 2em;
+}
+
+.profile-details h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.profile-details p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.document-list {
+    list-style: none;
+    padding: 0;
+}
+
+.document-list li {
+    margin-bottom: 10px;
+}
+
+.document-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.document-list a:hover {
+    text-decoration: underline;
+}
+
+
+/* Profile Dropdown */
+.profile-dropdown {
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 20px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Hide by default, show with JS */
+    width: 200px;
+    z-index: 1000;
+}
+
+.profile-dropdown .profile-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-dropdown .profile-pic {
+    margin-right: 10px;
+}
+
+.profile-dropdown .profile-pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile-dropdown h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.profile-dropdown .profile-details {
+    padding: 10px;
+}
+
+.profile-dropdown .logout-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.profile-dropdown .logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* Main Content Area */
+#content-area {
+    padding: 20px;
+}
+
+/* Main Banner */
+.home-banner {
+    background: url('./image.png') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-btn {
+    background-color: black;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.cta-btn.secondary {
+    background-color: #6c757d;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.cta-btn.secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features-header h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.features-header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.feature-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-item {
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1em;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    font-size: 1em;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #23272b;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-bottom-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-bottom-links li {
+    display: inline;
+}
+
+.footer-bottom-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+    color: #007bff;
+}
