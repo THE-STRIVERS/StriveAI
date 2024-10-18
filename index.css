@@ -9,7 +9,7 @@ body, h1, h2, h3, p, ul, li {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #100f0f;
+    color: #070b4a;
     background-color: #f4f4f4;
 }
 
@@ -35,7 +35,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #53646f;
+    background-color: rgb(0, 0, 0);
     padding: 10px 20px;
     color: #fff;
 }
@@ -68,7 +68,7 @@ html {
 }
 
 .navbar .nav-links a:hover {
-    color: #007bff;
+    color: #ffcc00;
 }
 
 /* Profile Picture */
@@ -76,7 +76,16 @@ html {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    margin: 5px;
+    border: 3px solid white; /* Set border width, style, and color */
+    transition: border-color 0.3s ease; /* Smooth transition for border color change */
 }
+
+/* Hover effect for profile picture */
+.profile-pic img:hover {
+    border-color: orange; /* Change border color on hover */
+}
+
 
 .profile-container {
     display: flex;
@@ -96,7 +105,6 @@ html {
 .profile-header {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .profile-header .profile-pic {
@@ -163,47 +171,52 @@ html {
 
 /* Main Banner */
 .home-banner {
-    background: url('./dashboard.png') no-repeat center center/cover;
-    color: #ffffff;
-    text-align: center;
+    position: relative; /* Allows positioning of inner elements */
     padding: 40px;
     height: 60vh;
+    overflow: hidden; /* Hides overflow */
+    text-align: center;
 }
 
-.banner-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.home-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Places the overlay below the text */
 }
 
+/* Image Shadow */
+.home-banner img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position it absolutely to cover the entire banner */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Places it behind the overlay and content */
+    filter: drop-shadow(0 0 10px rgba(0, 123, 255, 0.7)); /* Blue shadow effect */
+}
+
+/* Content inside the banner */
+.banner-content {
+    position: relative; /* Positions content above the overlay */
+    z-index: 2; /* Ensures text is above the overlay */
+    color: white; /* Set default text color to white */
+}
+
+/* Transition effect for text color */
+.banner-content h1,
 .banner-content p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
-.cta-buttons {
-    margin-top: 20px;
-}
-
-.cta-btn {
-    background-color: black;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 1em;
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.cta-btn.secondary {
-    background-color: #6c757d;
-}
-
-.cta-btn:hover {
-    background-color: #0056b3;
-}
-
-.cta-btn.secondary:hover {
-    background-color: #5a6268;
+/* Change text color on hover */
+.home-banner:hover .banner-content h1,
+.home-banner:hover .banner-content p {
+    color: #ffcc00; /* Change this to your desired hover color */
 }
 
 /* Responsive adjustments for Banner */
@@ -241,9 +254,46 @@ html {
     }
 }
 
+
+.banner-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-btn {
+    background-color: black;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.cta-btn.secondary {
+    background-color: #6c757d;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.cta-btn.secondary:hover {
+    background-color: #5a6268;
+}
+
 /* Features Section */
 .features {
-    padding: 50px 20px;
+    padding: 50px 30px;
     background-color: #fff;
     text-align: center;
 }
@@ -345,7 +395,7 @@ html {
 }
 
 .footer-section ul li a:hover {
-    color: #007bff;
+    color: #ffcc00;
 }
 
 .footer-bottom {
@@ -379,7 +429,7 @@ html {
 }
 
 .footer-bottom-links a:hover {
-    color: #007bff;
+    color:#ffcc00;
 }
 
 /* Responsive adjustments for Footer */
